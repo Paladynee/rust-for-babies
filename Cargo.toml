@@ -1,7 +1,8 @@
 [workspace]
 members = [
     "content/_01-hello-world",
-    "content/_02-basic-math",
-    "content/_03-function-signatures",
+    "content/_02-compiling-rust",
+    "content/_03-basic-math",
+    "content/_04-function-signatures",
 ]
 resolver = "2"

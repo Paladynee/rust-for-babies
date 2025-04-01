@@ -11,5 +11,9 @@ name = "_02-basic-math"
 version = "0.1.0"
 
 [[package]]
+name = "_03-compiling"
+version = "0.1.0"
+
+[[package]]
 name = "_03-function-signatures"
 version = "0.1.0"

@@ -1,0 +1,8 @@
+[package]
+name = "_03-compiling"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+# Hint: read src/main.rs instead!
