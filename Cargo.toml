@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "content/_01-hello-world",
+    "content/_02-basic-math",
+    "content/_03-function-signatures",
+]
+resolver = "2"

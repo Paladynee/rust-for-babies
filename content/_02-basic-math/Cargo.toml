@@ -1,0 +1,8 @@
+[package]
+name = "_02-basic-math"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+# Hint: read src/main.rs instead!
