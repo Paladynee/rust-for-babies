@@ -21,13 +21,14 @@
 //! [terminal, console, CLI, tty]: https://en.wikipedia.org/wiki/Command-line_interface
 //! [Rust]: https://github.com/rust-lang/rust
 //! [Cargo]: https://github.com/rust-lang/cargo
-//! 
+//!
 //! Voxell Paladynee 2025
 
 // +- Rust Editor.exe -------------------------------+
 // | 38 |                                            |
 // | 39 | fn main() {                                |
-// | 40 | --------- `main` is a special function!    |
+// |    | --------- `main` is a special function!    |
+// | 40 |                                            |
 // +----|--------------------------------------------+
 //
 // The entry point of our program, named `main`. The standard library will automatically call this function
@@ -86,13 +87,14 @@ fn main() {
     // |    | ^^^^ the format string                     |
     // +----|--------------------------------------------+
 
-    // The second argument, the binding `string` which refers to our variable with type &str,
+    // The second argument, the variable binding `string` which refers to our variable with type &str,
     // implements the `Display` trait from the `std::fmt` module, which, when implemented on any
     // value denotes how the value should be formatted to a target `String` for end-user viewing
     // purposes. This trait is what `println!` actually looks for when it's given a value as an
     // argument. For a simple `&str` type, this implementation is provided by `std` by default and
     // it directly writes the bytes of the underlying string to the target buffer. Writing these
-    // raw bytes is safe because the compiler guarantees that any value with type &str has this property.
+    // raw bytes when a terminal interprets the stdout is safe because the compiler guarantees
+    // that any value with type &str has the UTF-8 validity property.
     println!("{}", string);
 
     // Normally, `string` along with any other value available in the scope would be `Drop`ped after
@@ -101,4 +103,3 @@ fn main() {
     // that value. after that the standard library will do some internal cleanup as an implementation
     // detail and terminate the program.
 }
-
